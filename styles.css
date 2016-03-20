@@ -25,7 +25,7 @@ body{
 .page{
     position: absolute;
     display: inline-block;
-    height: 500px;
+    height: 30rem;
     width: 100%;
     left: 0;
     padding-top: 5%;
@@ -47,7 +47,6 @@ body{
 }
 #pg2{
     background: linear-gradient(hsla(35, 30%, 35%, 1.00),hsla(35, 30%, 35%, 0));
-    //box-shadow: 3px 3px 15px black;
     transform-origin: left;
     transform: rotateY(0deg);
     transition: transform 1s ease;    
@@ -56,7 +55,7 @@ body{
 #holder{
     position: absolute;
     display: inline-block;
-    height: 500px;
+    height: 30rem;
     width: 25rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
