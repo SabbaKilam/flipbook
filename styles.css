@@ -33,7 +33,7 @@ body{
     font-size: 5rem;
     color: white;
     border-radius: 1rem;
-    border-left: 7px dashed white;
+    border-left: 5px dashed white;
     box-sizing: border-box;
     user-select: none;
 }
@@ -54,11 +54,12 @@ body{
 }
 #holder{
     position: relative;
-    margin: 5% auto;
-    left: 33.33%;
+    //margin: 5% auto;
+    top: 5rem;
+    left: 30rem;
     display: inline-block;
     height: 500px;
-    width: 33.33%;
+    width: 25rem;
     border-radius: 1rem;    
     box-shadow: 15px 15px 30px black;
 }
