@@ -12,7 +12,7 @@ _(window).on("resize",function(){
 _(".page").on("mousedown", function(e){
     _(e.target).styles
         ("transition","all 2s ease")
-        ("transform","rotateY(360deg)")
+        ("transform","rotateY(-360deg)")
         ("background","black")
         ("color","black")
         ("zIndex","1")
@@ -57,7 +57,6 @@ function adjustView(){
     else{
         _("#holder").styles
             ("width","25rem")
-
             ("left",left)
             ("top", top)
         ; 
