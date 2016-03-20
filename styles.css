@@ -30,9 +30,10 @@ body{
     left: 0;
     padding-top: 5%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     color: white;
-    border-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     border-left: 5px dashed white;
     box-sizing: border-box;
     user-select: none;
@@ -60,6 +61,7 @@ body{
     display: inline-block;
     height: 500px;
     width: 25rem;
-    border-radius: 1rem;    
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     box-shadow: 15px 15px 30px black;
 }
