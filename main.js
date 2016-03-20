@@ -3,23 +3,10 @@ var msgArray = ["Abbas<br/>Malik","This","is","not","the","entire","story.", "He
 var _ = rekwire("module");
 var index = 0;
 _(window).on("load",function(){
-    resizeRem();
+    adjustView();
 });
 _(window).on("resize",function(){
-    _("#holder").styles
-        ("left","30rem")
-        ("width","25rem")           
-    ;    
-    if(window.innerWidth >= window.screen.width/2){
-        resizeRem();
-    }
-    else{
-        _("#holder").styles
-            ("left","2.5%")
-            ("width","95%")            
-        ;
-    }
-
+    adjustView();
 });
 
 _(".page").on("mousedown", function(e){
@@ -55,4 +42,24 @@ _(".page").on("mousedown", function(e){
 function resizeRem(){
     var newSize = (8+ window.innerWidth/150)+"px";
     _(document.documentElement).css("fontSize", newSize);
+}
+function adjustView(){
+    resizeRem();
+    var left = (window.innerWidth - _("#holder").getElement().getBoundingClientRect().width)/2 +"px";
+    var top = (window.innerHeight - _("#holder").getElement().getBoundingClientRect().height)/2 +"px";    
+    if(window.innerWidth <=window.screen.width/3){
+        _("#holder").styles
+            ("left","2.5%")
+            ("top", top)            
+            ("width","95%")            
+        ;
+    }
+    else{
+        _("#holder").styles
+            ("width","25rem")
+
+            ("left",left)
+            ("top", top)
+        ; 
+    }    
 }

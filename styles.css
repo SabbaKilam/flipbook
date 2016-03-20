@@ -54,10 +54,7 @@ body{
     z-index: 1;    
 }
 #holder{
-    position: relative;
-    //margin: 5% auto;
-    top: 5rem;
-    left: 30rem;
+    position: absolute;
     display: inline-block;
     height: 500px;
     width: 25rem;
